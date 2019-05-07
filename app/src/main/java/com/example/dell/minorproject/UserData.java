@@ -31,7 +31,7 @@ public class UserData {
     }
 
     public void setDisease(String disease) {
-        disease = disease;
+        this.disease = disease;
     }
 
     public String getArticle() {

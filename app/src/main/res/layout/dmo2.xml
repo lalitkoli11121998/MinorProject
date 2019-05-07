@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="210dp">
+<android.support.design.internal.ScrimInsetsFrameLayout
+    android:id="@+id/toend"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="209dp"
+        android:layout_margin="0dp"
+        android:padding="23dp"
+        app:cardCornerRadius="23dp">
+
+        <ImageView
+            android:id="@+id/diseaseimage"
+            android:layout_width="320dp"
+            android:layout_height="209dp"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/diseasetext"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="20dp" />
+
+    </android.support.v7.widget.CardView>
+
+</android.support.design.internal.ScrimInsetsFrameLayout>
+
+<ImageButton
+android:id="@+id/youtubebutton"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+android:layout_marginTop="13dp"
+android:layout_toEndOf="@+id/toend"
+android:layout_toRightOf="@+id/toend"
+android:background="@android:color/white"
+app:srcCompat="@drawable/y" />
+
+<ImageButton
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@+id/youtubebutton"
+android:layout_marginTop="21dp"
+android:layout_toEndOf="@+id/toend"
+android:layout_toRightOf="@+id/toend"
+    android:background="@android:color/white"
+android:src="@drawable/r"
+android:id="@+id/remediesbutton" />
+
+<ImageButton
+android:id="@+id/symtomsbutton"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@+id/remediesbutton"
+android:layout_marginTop="15dp"
+    android:background="@android:color/white"
+android:layout_toEndOf="@+id/toend"
+android:layout_toRightOf="@+id/toend"
+app:srcCompat="@drawable/sy" />
+
+<ImageButton
+android:id="@+id/article"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignBottom="@+id/toend"
+    android:background="@android:color/white"
+android:layout_marginBottom="12dp"
+android:layout_toEndOf="@+id/toend"
+android:layout_toRightOf="@+id/toend"
+app:srcCompat="@drawable/i" />
+</RelativeLayout>

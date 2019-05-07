@@ -8,6 +8,7 @@
     tools:context="com.example.dell.minorproject.MainActivity">
 
     <android.support.design.widget.BottomNavigationView
+        android:backgroundTint="@color/colorPrimaryDark"
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

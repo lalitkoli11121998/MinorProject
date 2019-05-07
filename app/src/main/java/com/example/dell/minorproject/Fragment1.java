@@ -47,6 +47,7 @@ public class Fragment1 extends android.support.v4.app.Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.content_main2, container, false);
+
         recyclerView = view.findViewById(R.id.recycle1);
            fetchDataFromDataBase();
         return view;
@@ -57,7 +58,7 @@ public class Fragment1 extends android.support.v4.app.Fragment {
     private void fetchDataFromDataBase() {
         FirebaseFirestore rootRef = FirebaseFirestore.getInstance();
         CollectionReference coffeeRef = rootRef.collection("photo");
-        final Task<QuerySnapshot> querySnapshotTask = coffeeRef.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        coffeeRef.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
